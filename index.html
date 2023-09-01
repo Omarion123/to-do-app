@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>to do list app</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -12,15 +13,20 @@
     <div class="container">
         <div class="todo-app">
             <h2>To-Do List <img src="icon.png"></h2>
-            <div class="row">
-                <input type="text" id="input-box" placeholder="Add your list">
-                <button onclick="addTask()">Add</button>
-            </div>
+            <form action="" class="form-group">
+                <div class="row">
+                    <input type="text" id="input-box" class="inputbox" placeholder="Add your list">
+                    <button onclick="addTask()" >Add</button>
+                </div>
+            </form>
             <ul id="list-container">
                 <!-- <li class="checked">Task 1</li>
                 <li>Task 2</li>
                 <li>Task 3</li> -->
             </ul>
+        </div>
+        <div class="back-button">
+            <a href="/index.html#work" class="btn" onclick="goBack()"><button class="back">Back</button></a>
         </div>
     </div>
     <script defer src="index.js"></script>

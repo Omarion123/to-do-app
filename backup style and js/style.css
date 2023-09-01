@@ -35,7 +35,7 @@
     margin-left: 10px;
 }
 
-.row {
+.row{
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -44,16 +44,14 @@
     padding-left: 20px;
     margin-bottom: 25px;
 }
-
-input {
+input{
     flex: 1;
     border: none;
     outline: none;
     background: transparent;
     padding: 10px;
 }
-
-button {
+button{
     color: white;
     border: none;
     outline: none;
@@ -63,15 +61,14 @@ button {
     cursor: pointer;
     border-radius: 40px;
 }
-
-.btn {
+.btn{
     display: block;
     display: flex;
     justify-content: center;
     text-decoration: none;
 }
 
-ul li {
+ul li{
     list-style: none;
     font-size: 17px;
     padding: 12px 8px 12px 50px;
@@ -80,47 +77,26 @@ ul li {
     position: relative;
 }
 
-ul li::before {
+ul li::before{
     content: '';
     position: absolute;
     height: 28px;
     width: 28px;
     border-radius: 50%;
-    background-image: url(/unchecked.png);
+    background-image: url(/images/unchecked.png);
     background-size: cover;
     background-position: center;
     top: 12px;
     left: 8px;
 }
-
-/* ul li.checked{
+ul li.checked{
     color: #555;
     text-decoration: line-through;
-} */
-ul li.checked {
-    color: #555;
-    text-decoration: line-through;
-    display: block;
-    margin: 0 0.5rem;
-
-    animation: tada;
-    /* referring directly to the animation's @keyframe declaration */
-    animation-duration: 2s;
-    /* don't forget to set a duration! */
 }
-
-.addTask {
-    animation: jello;
-    /* referring directly to the animation's @keyframe declaration */
-    animation-duration: 2s;
-    /* don't forget to set a duration! */
+ul li.checked::before{
+    background-image: url(/images/checked.png);
 }
-
-ul li.checked::before {
-    background-image: url(/checked.png);
-}
-
-ul li span {
+ul li span{
     position: absolute;
     right: 0;
     top: 5px;
@@ -132,7 +108,6 @@ ul li span {
     text-align: center;
     border-radius: 50%;
 }
-
-ul li span:hover {
+ul li span:hover{
     background-color: #edeef0;
 }
