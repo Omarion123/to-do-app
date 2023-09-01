@@ -3,6 +3,7 @@ console.log(inputBox.value);
 const listContainer = document.getElementById("list-container");
 const formGroup = document.getElementById("form-group");
 const animate = document.getElementsByClassName(".checked");
+const removed = document.getElementsByClassName(".removed");
 const back = document.querySelector('.btn');
 // back.classList.add('animate__animated', 'animate__bounceOutLeft');
 
@@ -35,6 +36,7 @@ listContainer.addEventListener("click", function (e) {
         saveData();
     }
     else if (e.target.tagName === "SPAN") {
+        e.target.classList.toggle("removed");
         e.target.parentElement.remove();
         saveData();
     }
