@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="icon.png" />
     <link rel="stylesheet" href="style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -15,20 +16,31 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/gh/yesiamrocks/cssanimation.io@1.0.3/cssanimation.min.css"
+      rel="stylesheet"
+    />
     <title>To-do list</title>
   </head>
 
   <body>
     <main class="app">
-      <h1 class="title">My Todo List...</h1>
+      <h1 class="title animate__animated animate__bounceInDown">
+        My Todo List...
+      </h1>
       <div class="input-header">
         <h1><span id="date"></span></h1>
         <div class="to-do-input">
-          <input type="text" id="item" placeholder="Enter a task..." /><button
-            id="enter"
-          >
-            Enter
-          </button>
+          <input
+            type="text"
+            class="input-text"
+            id="item"
+            placeholder="Enter a task..."
+          /><button id="enter" class="entering">Enter</button>
         </div>
       </div>
       <div class="to-do-list"></div>

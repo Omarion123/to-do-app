@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Moving Gradient H2</title>
+    <style>
+      /* Define the keyframes for the gradient animation */
+      @keyframes movingGradient {
+        0% {
+          background-position: 0% 50%;
+        }
+        100% {
+          background-position: 100% 50%;
+        }
+      }
+
+      /* Style for the H2 element */
+      h2 {
+        font-size: 36px;
+        background: linear-gradient(45deg, #44ff00, #e52e71, #1e1eae);
+        background-size: 200% 200%;
+        color: #fff;
+        text-align: center;
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        animation: movingGradient 5s linear infinite;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Text with Moving Gradient</h2>
+  </body>
+</html>
