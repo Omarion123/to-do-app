@@ -2,39 +2,38 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>to do list app</title>
-    <link rel="icon" href="/icon.png" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap"
+      rel="stylesheet"
+    />
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
     />
-    <link rel="stylesheet" href="style.css" />
+    <title>To-do list</title>
   </head>
 
   <body>
-    <div class="container">
-      <div class="todo-app">
-        <h2 class="heading2">To-Do List <img src="icon.png" /></h2>
-        <form action="" class="form-group">
-          <div class="row">
-            <input
-              type="text"
-              id="input-box"
-              class="inputbox"
-              placeholder="Add your task..."
-            />
-            <button class="fancy-button" onclick="addTask()">Add</button>
-            <!-- <button onclick="addTask()">Add</button> -->
-          </div>
-        </form>
-        <ul id="list-container">
-          <!-- <li class="checked">Task 1</li>
-                <li>Task 2</li>
-                <li>Task 3</li> --><!--Fixing the list by commenting-->
-        </ul>
+    <main class="app">
+      <h1 class="title">My Todo List...</h1>
+      <div class="input-header">
+        <h1><span id="date"></span></h1>
+        <div class="to-do-input">
+          <input type="text" id="item" placeholder="Enter a task..." /><button
+            id="enter"
+          >
+            Enter
+          </button>
+        </div>
       </div>
-    </div>
-    <script defer src="index.js"></script>
+      <div class="to-do-list"></div>
+    </main>
+
+    <script src="script.js"></script>
   </body>
 </html>
